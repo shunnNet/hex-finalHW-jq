@@ -123,6 +123,10 @@
     }
 }
 
+.mg-auto{
+    margin: auto;
+}
+
 .mg-h-sm {
 	margin-left: $margin-sm;
 	margin-right: $margin-sm;
@@ -166,6 +170,10 @@
 
 .mg-b-0 {
 	margin-bottom: 0;
+}
+
+.mg-t-lg{
+    margin-top : $margin-lg;
 }
 
 .float-r {

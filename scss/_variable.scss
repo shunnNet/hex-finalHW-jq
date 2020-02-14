@@ -59,7 +59,7 @@ $form-unit-border-radius  : $global-border-radius;
 // Typography ----
 //
 // Font, line-height, and color for body text, headings, and more.
-$font-family-base: "Microsoft Jheng Hei Regular",Arial;
+$font-family-base: "微軟正黑體","蘋方-繁",Arial,serif;
 
 $font-size-md    : 1rem                   ;
 $font-size-lg    : $font-size-md * 1.25 ;
@@ -82,9 +82,9 @@ $h5-font-size:                1.25em ;
 $h6-font-size:                1em ;
 
 // grid
-$gutter             : 15px;
-$side-gutter        : 5px;
-$gutter-v           : 20px;
+$gutter             : 15px  ;
+$side-gutter        : 5px   ;
+$gutter-v           : 20px  ;
 $container-width-lg : 1440px; // ($col-width + $gutter*2)*$cols;
 $container-width-md : 1080px;
 $container-width-sm :  960px;
@@ -104,11 +104,3 @@ $link-hover-decoration  : none;
 $link-decoration        : underline ;
 //$link-pseudo-content    : ">>"     ;
 
-/* base
-$footBanner-bg   : linear-gradient(0deg, $green-600 0%,
-                                         $green-800 100%);
-$footBanner-color: $base;
-
-$banner-font-color       : $base;
-$banner-bg-color         : $black-700;
-*/

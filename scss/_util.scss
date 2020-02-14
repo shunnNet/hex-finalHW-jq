@@ -220,12 +220,28 @@
 	}
 }
 
-
 .ul-flex-li-phone {
 	@include pad {
 		display: flex;
 		& > li {
 			flex: 1 1 0;
+		}
+	}
+}
+
+.ul-inlineList {
+	@extend %reset-ul;
+	@extend %ul--liInline;
+	//display: flex;
+}
+
+.ul-inlineList-link {
+	//flex: 1 0 0;
+	padding: 0 10px;
+	a {
+		@extend %reset-a;
+		&:hover {
+			color: $lightup;
 		}
 	}
 }
@@ -242,9 +258,18 @@
 	width: auto;
 }
 
+.text-left {
+	text-align: left;
+}
+
 .text-center {
 	text-align: center;
 }
+
+.text-right {
+	text-align: right;
+}
+
 .text-ellipsis {
 	@extend %text-ellipsis;
 }

@@ -11,7 +11,8 @@ body {
 	color: $body-color;
 	font-size: $font-size-md;
 	font-family: $font-family-base;
-	line-height: $line-height-md;
+    line-height: $line-height-md;
+    font-weight: $font-weight-bolder;
 }
 
 nav {
@@ -31,6 +32,12 @@ footer {
     background: linear-gradient(0deg, $green-600 0%, 
                                             $green-800 100%);
     color : $base;
+    &-title{
+        font-size: $h4-font-size;
+        text-align: center;
+        font-weight: $font-weight-bolder;
+        padding-bottom: $padding-lg;
+    }
 }
 .banner{
     color : $base;

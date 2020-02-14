@@ -13,49 +13,82 @@
   }
  */
 
-a{
-    color          : $link-color;
-    text-decoration: $link-decoration;
-    &:hover{
-        color          : $link-hover-color;
-        text-decoration: $link-hover-decoration
-    }
-    &:visited{
-        color          : $link-visited-color;
-        text-decoration: $link-decoration;
-    }
+a {
+	color: $link-color;
+	text-decoration: $link-decoration;
+	&:hover {
+		color: $link-hover-color;
+		text-decoration: $link-hover-decoration;
+	}
+	&:visited {
+		color: $link-visited-color;
+		text-decoration: $link-decoration;
+	}
 }
 
 h1 {
-    font-size  : $h1-font-size;
-    line-height: $line-height-md;
+	font-size: $h1-font-size;
+	line-height: $line-height-md;
 }
 
 h2 {
-    font-size  : $h2-font-size;
-    line-height: $line-height-md;
+	font-size: $h2-font-size;
+	line-height: $line-height-md;
 }
 
 h3 {
-    font-size  : $h3-font-size;
-    line-height: $line-height-md;
+	font-size: $h3-font-size;
+	line-height: $line-height-md;
 }
 h4 {
-    font-size  : $h4-font-size;
-    line-height: $line-height-md;
+	font-size: $h4-font-size;
+	line-height: $line-height-md;
 }
 h5 {
-    font-size  : $h5-font-size;
-    line-height: $line-height-md;
+	font-size: $h5-font-size;
+	line-height: $line-height-md;
 }
 h6 {
-    font-size  : $h6-font-size;
-    line-height: $line-height-md;
+	font-size: $h6-font-size;
+	line-height: $line-height-md;
 }
 
-input,select,textarea,button {
-    border-radius: $form-unit-border-radius;
-    background-color: $white;
-    border: 1px solid $gray-600;
+input,
+select,
+textarea,
+button {
+	border-radius: $form-unit-border-radius;
+	background-color: $white;
+	border: 1px solid $gray-600;
+	font-size: $font-size-md;
+	font-family: $font-family-base;
+	padding: 0 10px;
+	line-height: $line-height-lg;
+	box-sizing: border-box;
 }
 
+select,button {
+	cursor: pointer;
+}
+
+button {
+	text-align: center;
+	margin: 0;
+	border: 0;
+	padding: 0 20px;
+	display: inline-block;
+	vertical-align: middle;
+	white-space: normal;
+	background: none;
+}
+
+textarea {
+	border: none;
+	overflow: auto;
+	outline: none;
+	box-shadow: none;
+	box-sizing: border-box; // for no overflow parent container
+	resize: none; /*remove the resize handle on the bottom right*/
+	height: 100%;
+	width: 100%;
+}

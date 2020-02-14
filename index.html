@@ -157,31 +157,37 @@
             </div>
         </section>
         <section class="container-md footer-banner">
-            <div class="pure-g">
+            <form action="#" method="get" class="pure-g">
                 <div class="pure-u-1">
-                    <h2 class="text-center">
+                    <h4 class="footer-banner-title">
                         對我們的課程有興趣嗎？
                         <br>
                         歡迎留下您的資料
-                    </h2>
+                    </h4>
                 </div>
-            </div>
-
-            <form action="#" method="get" class="pure-g">
                 <div class="pure-u-1-2">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea  name="message" class="w-full"></textarea>
                 </div>
                 <div class="pure-u-1-2">
                     <fieldset>
-                        <p>姓名</p>
-                        <input type="text" name="name">
-                        <p>電話</p>
-                        <input type="text" name="phone">
-                        <p>信箱</p>
-                        <input type="email" name="email">
+                        <div class="form__line">
+                            <p class="fw-bolder">姓名</p>
+                            <input class="w-full" type="text" name="name">
+                        </div>
+                        <div class="form__line">
+                            <p class="fw-bolder">電話</p>
+                            <input class="w-full" type="text" name="phone">
+                        </div>
+                        <div class="form__line">
+                            <p class="fw-bolder">信箱</p>
+                            <input class="w-full" type="email" name="email">
+                        </div>
+
+                        <div class="form__line">
+                            <button class="form__submit--primary float-r" type="submit">送出</button>
+                        </div>
                     </fieldset>
                 </div>
-
             </form>
 
         </section>

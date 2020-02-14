@@ -8,16 +8,16 @@
 }
 
 .navMenu__item{
-    padding : 0 $padding-md;
     position: relative;
     word-break: keep-all;
     white-space: nowrap;
 }
 .navMenu__item__link{
     @extend %a__block;
+    padding : 0 $padding-md;
 }
 
-.navMenu__item__focusBar{
+.navMenu__item__focusBar--h{
     display: block;
     position: absolute;
     bottom: 0;
@@ -35,6 +35,18 @@
     min-width   : 100%;
     background-color: $body-bg;
     visibility: hidden;
+    overflow: hidden;
 }
+
+.navMenu__item__focusBar--v{
+    display: block;
+    position: absolute;
+    top: 0;
+    left  : 0;
+    height : 100%;
+    border-right : 3px solid $primary;
+    visibility: hidden;
+}
+
 
 

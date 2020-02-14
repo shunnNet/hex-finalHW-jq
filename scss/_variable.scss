@@ -1,0 +1,114 @@
+// Color ----
+
+$white      : #ffffff;
+$gray-200   : #f6f6f6;
+$gray-400   : #f7f7f7; 
+$gray-500   : #dddddd;
+$gray-600   : #e1e1e1;
+$green-500  : #00cc99;
+$green-600  : #009872;
+$green-800  : #00644b;
+
+$black-100  : #020202;
+$black-700  : #333333;
+
+$pink-500   : #e54991;
+
+$blue-900   : rgb(0, 0, 238);
+$purple-700 : rgb(85, 26, 139);
+
+$primary    : $green-500;
+$lightup    : $pink-500 ;
+$base       : $white    ;
+$sub        : $gray-200 ;
+$info       : $black-700;
+
+// base & layout Color  ----
+$body-bg      : $base;
+$body-color   : $info;
+
+$nav-font-color  : $primary;
+$nav-bg-color    : $body-bg;
+$nav-sub-bg-color:$gray-200;
+
+$footer-bg      : $body-bg;
+$footer-color   : $body-color;
+
+$table-border-color : $gray-500;
+$table-head-color   : $gray-400;
+
+$form-input-border-color  : $gray-600;
+$form-button-bg-color     : $primary;
+$form-button-color        : $base;
+
+// html box
+
+$global-border-radius     : 3px;
+$global-box-shadow        : drop-shadow(0px 3px 1.5px rgba(0, 0, 0, 0.16));
+
+$padding-lg   : 30px;
+$padding-md   : 20px;
+$padding-sm   : 10px;
+
+$margin-lg   : 30px;
+$margin-md   : 20px;
+$margin-sm   : 10px;
+
+$form-unit-border-radius  : $global-border-radius;
+
+// Typography ----
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-family-base: "Microsoft Jheng Hei Regular",Arial;
+
+$font-size-md    : 1rem                   ;
+$font-size-lg    : $font-size-md * 1.25 ;
+$font-size-xlg   : $font-size-md * 1.5 ;
+$font-size-sm    : $font-size-md * .875 ;
+
+$line-height-md  : 1.5  ;
+$line-height-lg  : 2    ;
+$line-height-sm  : 1.25 ;
+
+$font-weight-base   : 500       ;
+$font-weight-bold   : 700    ;
+$font-weight-bolder : 1000    ;
+
+$h1-font-size:                2.5em ;
+$h2-font-size:                2em ;
+$h3-font-size:                1.75em ;
+$h4-font-size:                1.5em ;
+$h5-font-size:                1.25em ;
+$h6-font-size:                1em ;
+
+// grid
+$gutter             : 15px;
+$side-gutter        : 5px;
+$gutter-v           : 20px;
+$container-width-lg : 1440px; // ($col-width + $gutter*2)*$cols;
+$container-width-md : 1080px;
+$container-width-sm :  960px;
+
+// Breakpoints & Container ----
+$breakpoint-phone       : 35.5em;
+$breakpoint-pad         : 48em;
+$breakpoint-screen      : 64em;
+$breakpoint-screen-wide : 80em;
+
+
+// Links ----
+$link-color             : $blue-900 ;
+$link-hover-color       : $lightup ;
+$link-visited-color     : $purple-700;
+$link-hover-decoration  : none;
+$link-decoration        : underline ;
+//$link-pseudo-content    : ">>"     ;
+
+/* base
+$footBanner-bg   : linear-gradient(0deg, $green-600 0%,
+                                         $green-800 100%);
+$footBanner-color: $base;
+
+$banner-font-color       : $base;
+$banner-bg-color         : $black-700;
+*/

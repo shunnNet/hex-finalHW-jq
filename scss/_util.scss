@@ -1,0 +1,308 @@
+
+.reset-a {
+    @extend %reset-a;
+}
+.reset-ul {
+	@extend %reset-ul;
+}
+
+.default-ul {
+	list-style: initial;
+}
+
+.pure-g--child-pd-0 {
+	&>[class*="pure-u"] {
+		padding:0
+	}
+}
+
+.pure-g--child-pd-0-pad {
+    @include pad{
+        &>[class*="pure-u"] {
+            padding:0
+        }
+    }
+}
+
+.color-primary {
+	color: $primary;
+}
+
+.color-sub {
+	color: $sub;
+}
+.color-lightup {
+	color: $lightup;
+}
+.color-base {
+	color: $base;
+}
+.color-info {
+	color: $info;
+}
+
+.color-body {
+	color: $body-color;
+}
+
+.bg-primary {
+	background-color: $primary;
+}
+
+.bg-sub {
+	background-color: $sub;
+}
+.bg-lightup {
+	background-color: $lightup;
+}
+.bg-base {
+	background-color: $base;
+}
+.bg-info {
+	background-color: $info;
+}
+
+.pd-h-sm {
+	padding-left: $padding-sm;
+	padding-right: $padding-sm;
+}
+.pd-v-sm {
+	padding-top: $padding-sm;
+	padding-bottom: $padding-sm;
+}
+
+.pd-h-md {
+	padding-left: $padding-md;
+	padding-right: $padding-md;
+}
+.pd-v-md {
+	padding-top: $padding-md;
+	padding-bottom: $padding-md;
+}
+
+.pd-h-lg {
+	padding-left: $padding-lg;
+	padding-right: $padding-lg;
+}
+.pd-v-lg {
+	padding-top: $padding-lg;
+	padding-bottom: $padding-lg;
+}
+.pd-v-0 {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.pd-h-0 {
+	padding-left: 0;
+	padding-right: 0;
+}
+.pd-0{
+    padding: 0;
+}
+
+.pd-horizon-0-phone {
+    @include phone{
+        padding-left: 0;
+        padding-right:0;
+    }
+}
+.pd-0-pad {
+    @include pad{
+        padding: 0;
+    }
+}
+
+.pd-l-md-phone{
+    @include phone{
+        padding-left: 20px;
+    }
+}
+.pd-l-30-phone{
+    @include phone{
+        padding-left: 30px;
+    }
+}
+
+.mg-h-sm {
+	margin-left: $margin-sm;
+	margin-right: $margin-sm;
+}
+.mg-v-sm {
+	margin-top: $margin-sm;
+	margin-bottom: $margin-sm;
+}
+
+.mg-h-md {
+	margin-left: $margin-md;
+	margin-right: $margin-md;
+}
+.mg-v-md {
+	margin-top: $margin-md;
+	margin-bottom: $margin-md;
+}
+
+.mg-h-lg {
+	margin-left: $margin-lg;
+	margin-right: $margin-lg;
+}
+.mg-v-lg {
+	margin-top: $margin-lg;
+	margin-bottom: $margin-lg;
+}
+
+
+.mg-h-0 {
+	margin-left: 0;
+	margin-right: 0;
+}
+.mg-v-0 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.mg-0 {
+	margin: 0;
+}
+
+.mg-b-0 {
+	margin-bottom: 0;
+}
+
+.float-r {
+	float: right;
+}
+
+.float-l {
+	float: left;
+}
+
+.fw-base {
+	font-weight: $font-weight-base;
+}
+
+.fw-bold {
+	font-weight: $font-weight-bold;
+}
+
+.fw-bolder {
+	font-weight: $font-weight-bolder;
+}
+
+.fs-lg{
+    font-size: $font-size-lg;
+}
+
+.fs-md{
+    font-size: $font-size-md;
+}
+
+.fs-sm{
+    font-size: $font-size-sm;
+}
+
+.pos-relative {
+	position: relative;
+}
+
+.hover-lightup {
+	&:hover {
+		color: $lightup;
+	}
+}
+
+.ul-inline-li{
+    @extend %ul--liInline;
+}
+
+.ul-inline-li-phone {
+	@include pad {
+		@include ul--liInline;
+	}
+}
+
+
+.ul-flex-li-phone {
+	@include pad {
+		display: flex;
+		& > li {
+			flex: 1 1 0;
+		}
+	}
+}
+
+.clearfix {
+	overflow: auto;
+}
+
+.img--fluid {
+	@include img-fluid;
+}
+.img--fitHeight {
+	height: 100%;
+	width: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+.text-ellipsis {
+	@extend %text-ellipsis;
+}
+
+.invisible-screen_wide {
+	@include screen-wide {
+		display: none;
+	}
+}
+
+.vis-visible{
+    visibility: visible ;
+}
+
+.d-block{
+    display : block ;
+}
+
+.d-none{
+    display : none ;
+}
+
+.d-block-screen{
+    display : none;
+    @include screen {
+        display : block;
+    }
+}
+
+.d-block-pad{
+    display : none;
+    @include pad {
+        display : block;
+    }
+}
+
+.d-inlineBlock-pad{
+    display : none;
+    @include pad {
+        display : inline-block;
+    }
+}
+
+.d-flex--pad{
+    display : none;
+    @include pad {
+        display : flex;
+    }
+}
+
+.d-none-pad {
+	@include pad {
+		display: none;
+	}
+}
+
+.d-none-screen{
+    @include screen {
+		display: none;
+	}
+}

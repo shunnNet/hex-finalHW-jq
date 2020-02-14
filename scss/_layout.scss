@@ -1,0 +1,314 @@
+html{
+    // https://stackoverflow.com/questions/17555682/height-100-or-min-height-100-for-html-and-body-elements
+    height : 100%; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height      : 100%;
+    background-color: $body-bg;
+    color           : $body-color;
+    font-size       : $font-size-md;
+    font-family     : $font-family-base;
+    line-height     : $line-height-md;
+}
+
+nav {
+    background-color: $body-bg;
+}
+
+#content{
+    padding-bottom : 40px;
+    flex : 1;
+}
+
+footer {
+    background-color: $footer-bg;
+    color           : $footer-color;
+    font-size       : $footer-font-size;
+    padding : 50px 0;
+}
+
+ul.share-buttons{
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul.share-buttons li{
+    display: inline-block;
+    margin-right : 5px;
+    
+  }
+  
+  ul.share-buttons .sr-only{
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+  
+  ul.share-buttons img{
+    width: 40px;
+  }
+
+
+input,select{
+    font-size       : $font-size-md;
+    font-family     : $font-family-base;
+}
+
+[type="submit"]{
+    :focus{
+        @include bg-font-color($bg:$lightup,$font:$contrast)
+    }
+}
+
+.container-fluid{
+    max-width    : 100%;
+}
+
+.container-lg{
+    max-width    : $container-width-lg;
+    margin       : auto;
+}
+
+.container-md{
+    max-width    : $container-width-md;
+    margin       : auto;
+}
+
+.container-sm{
+    max-width    : $container-width-sm;
+    margin       : auto;
+}
+
+
+.nav__logo {
+    display : inline-block;
+    height  : $nav-line-height;
+    vertical-align: bottom; 
+    //https://andy6804tw.github.io/2017/12/19/css-margin-space/
+}
+.nav__iconBox{
+    display: inline-block;
+    cursor : pointer;
+    width  : $nav-line-height;
+    height : $nav-line-height;
+    text-align: center;
+    .material-icons{
+        font-size  : $icon-size-base;
+        line-height: inherit;
+    }
+}
+
+.nav__iconBox--phone{
+    display: none;
+    @include pad{
+        display : inline-block;
+    }
+}
+
+.inlineList{
+    @extend %reset-ul;
+    @extend %ul--liInline;
+    //display: flex;
+}
+
+.inlineList__link{
+    //flex: 1 0 0;
+    padding : 0 10px;
+    a{
+        @extend %reset-a;
+        &:hover {
+            color: $contrast;
+        }
+    }
+}
+
+.msgBox {
+    border-width: 3px;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+
+.msgBox--alert{
+    @include bg-font-color($bg:$alert-bg-color,
+                           $font:$alert-font-color);
+    border-color: $alert-border-color;
+}
+
+.msgBox--success{
+    @include bg-font-color($bg:$success-bg-color,
+                           $font:$success-font-color);
+    border-color: $success-border-color;
+}
+
+.msgBox--info{
+    @include bg-font-color($bg:$info-bg-color,
+                           $font:$info-font-color);
+    border-color: $info-border-color;
+}
+
+.msgBox--sub{
+    @include bg-font-color($bg:$sub-bg-color,
+                           $font:$sub-font-color);
+    border-color: $sub-border-color;
+}
+
+
+.menu__query{
+    position: fixed;
+    width: auto;
+    top: 0;
+    transform : translateY(-100%);
+    transition: .4s;
+    visibility: hidden;
+    opacity: 0;
+    @include pad{
+        width : 100%;
+        left  : 0;
+    }
+    @media (max-width : 1140px){
+        right : 0
+    }
+}
+
+
+.menu__query--slideIn{
+    opacity : 1;
+    visibility: visible;
+    top:70px;
+    transform : translateY(0%);
+}
+
+
+.inlineBlock__desktop{
+    display: inline-block;
+}
+
+.block__phone{
+    @include pad{
+        display: block;
+    }
+}
+
+.clickIconBox {
+    display: inline-block;
+    width : 50px;
+    cursor: pointer;
+    text-align: center;
+    font-size : 1.5em;
+    height : 1em;
+    vertical-align: bottom;
+    .material-icons{
+        font-size: 1em;
+        vertical-align: top;
+    }
+}
+
+.button__fluid--sub{
+    cursor: pointer;
+    display: block;
+    border-radius   : 10px;
+    border: 1px solid $sub;
+    color: $sub;
+    padding : 10px 20px;
+    text-align: center;
+}
+
+.button--sub{
+    cursor: pointer;
+    display: inline-block;
+    border-radius   : 10px;
+    border: 1px solid $sub;
+    color: $sub;
+    padding : 10px 20px;
+    text-align: center;
+    &:hover{
+        border: 1px solid $lightup;
+        color: $lightup;
+    }
+}
+
+.stickyMenu--1{
+    position: sticky;
+    top:$nav-height;
+    z-index: 5000;
+}
+
+.stickyMenu--2{
+    position: sticky;
+    top:$nav-height + 50px;
+    z-index: 4500;
+}
+
+
+.user__photoBlock{
+    
+    @include pad{
+        width : 50%;
+        margin : auto;
+    }
+    margin-bottom: 10px;
+}
+
+.user__photoBlock__nameBox{
+    display: flex;
+    justify-content: center;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bolder;
+    padding: 10px 0;
+    .user__photoBlock__name{
+        display: inline-block;
+        word-break: break-word;
+    }
+    
+}
+
+.user__photoBlock__photoBox{
+    display: block;
+    width : 100%;
+    padding-bottom: 100%;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    .user__photoBlock__photoBox__photo{
+        width : 100%;
+        height: 100%;
+        position: absolute;
+    }
+}
+
+
+.test-ul{
+    color : black;
+    option {
+        color : black
+    }
+    option:checked { 
+        
+        display: none;
+    }
+}
+
+.mediaBox{
+    padding : 40% 0;
+    @include pad{
+        padding : 70% 0;
+    }
+    
+}
+
+.logoBox{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}

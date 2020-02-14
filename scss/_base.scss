@@ -1,0 +1,61 @@
+/*
+ * cwTeXYen (Chinese Traditional) http://www.google.com/fonts/earlyaccess
+
+ @font-face {
+    font-family: 'cwTeXYen';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+    src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
+         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
+         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
+         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
+  }
+ */
+
+a{
+    color          : $link-color;
+    text-decoration: $link-decoration;
+    &:hover{
+        color          : $link-hover-color;
+        text-decoration: $link-hover-decoration
+    }
+    &:visited{
+        color          : $link-visited-color;
+        text-decoration: $link-decoration;
+    }
+}
+
+h1 {
+    font-size  : $h1-font-size;
+    line-height: $line-height-md;
+}
+
+h2 {
+    font-size  : $h2-font-size;
+    line-height: $line-height-md;
+}
+
+h3 {
+    font-size  : $h3-font-size;
+    line-height: $line-height-md;
+}
+h4 {
+    font-size  : $h4-font-size;
+    line-height: $line-height-md;
+}
+h5 {
+    font-size  : $h5-font-size;
+    line-height: $line-height-md;
+}
+h6 {
+    font-size  : $h6-font-size;
+    line-height: $line-height-md;
+}
+
+input,select,textarea,button {
+    border-radius: $form-unit-border-radius;
+    background-color: $white;
+    border: 1px solid $gray-600;
+}
+

@@ -1,0 +1,20 @@
+
+.socialBox {
+    display : inline-block;
+    line-height: 1;
+    padding: 6px 0;
+    &__iconBox{
+        @extend %reset-a;
+        display : inline-flex;
+        align-items: center;
+        border-right : 1px solid #cccccc;
+        padding     : 0 10px;
+        &:last-child{
+            border-right : none;
+            padding-right: 0;
+        }
+        span{
+            padding-left: 5px;
+        }
+    }
+}

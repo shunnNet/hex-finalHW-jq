@@ -218,11 +218,11 @@
 	}
 }
 
-.ul-inline-li{
+.ul-inlineli{
     @extend %ul--liInline;
 }
 
-.ul-inline-li-phone {
+.ul-inlineli-phone {
 	@include pad {
 		@include ul--liInline;
 	}
@@ -312,6 +312,9 @@
     @include pad {
         display : block;
     }
+}
+.d-inlineBlock{
+    display : inline-block;
 }
 
 .d-inlineBlock-pad{

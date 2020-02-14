@@ -58,7 +58,11 @@
 	&:visited {
 		text-decoration: none;
 		color: inherit;
-	}
+    }
+    &:hover {
+        text-decoration: none;
+		color: inherit;
+    }
 }
 
 %reset-ul {
@@ -85,6 +89,14 @@
 	& > li {
 		display: inline-block;
 	}
+}
+
+
+%a__block {
+    @extend  %reset-a;
+    display    : block;
+    cursor     : pointer;
+    user-select: none;
 }
 
 

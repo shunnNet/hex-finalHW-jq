@@ -1,0 +1,40 @@
+
+
+.navMenu{
+    @extend %ul--liInline;
+    line-height: 48px;
+    color      : $primary;
+    background-color: $body-bg;
+}
+
+.navMenu__item{
+    padding : 0 $padding-md;
+    position: relative;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+.navMenu__item__link{
+    @extend %a__block;
+}
+
+.navMenu__item__focusBar{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left  : 0;
+    width  : 100%;
+    border-bottom : 3px solid $primary;
+    visibility: hidden;
+}
+
+.navMenu__children{
+    display : block;
+    position: absolute;
+    top     : 100%;
+    left    : 0;
+    min-width   : 100%;
+    background-color: $body-bg;
+    visibility: hidden;
+}
+
+

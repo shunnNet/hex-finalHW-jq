@@ -35,4 +35,30 @@ $(document).ready(function () {
         $(parent).find( className )
                  .css({ [prop] : 0, visibility : "hidden" })
      }
+
+     $("#jq-scroll-top").click((event)=>{
+         $("html").animate({
+             scrollTop : 0
+         },500)
+     })
+
+     var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+    
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        autoplay: {
+            delay: 5000,
+        },
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+    })
+
+
 });

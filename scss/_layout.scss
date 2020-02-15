@@ -28,21 +28,7 @@ footer {
 	color: $footer-color;
 }
 
-.footer-banner{
-    background: linear-gradient(0deg, $green-600 0%, 
-                                            $green-800 100%);
-    color : $base;
-    &-title{
-        font-size: $h4-font-size;
-        text-align: center;
-        font-weight: $font-weight-bolder;
-        padding-bottom: $padding-lg;
-    }
-}
-.banner{
-    color : $base;
-    background-color: $black-700;
-}
+
 
 .container-fluid {
 	max-width: 100%;

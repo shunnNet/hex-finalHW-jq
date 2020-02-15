@@ -1,0 +1,9 @@
+.swiper-container{
+    cursor: grab;
+    user-select: none;
+}
+
+.swiper-pagination-bullet-active{
+    background-color : $primary;
+}
+

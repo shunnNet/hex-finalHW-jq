@@ -18,3 +18,66 @@
         }
     }
 }
+
+.iconButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: $font-size-md;
+    width : 4em;
+    height : 4em;
+    border-radius: 100%;
+    box-shadow: 0 3px 1.5px rgba(0,0,0,0.16);
+    
+    background-color: $body-bg;
+    cursor: pointer;
+    transition : .2s;
+
+    .fas {
+        font-size: 2em;
+    }
+    &:hover{
+        background-color: $primary;
+        color           : $base;
+        .fas {
+            font-size: 2.5em;
+        }
+        &::before,&::after{
+            box-sizing: border-box;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            border: 1px solid gray;
+            animation-name: wave;
+            animation-iteration-count: infinite;
+            animation-direction: normal; 
+            animation-duration: 1.5s;
+        }
+        &::before{
+            
+            animation-delay: 0s;
+        }
+        &::after{
+            animation-delay: .5s;
+        }
+    }
+}
+
+@keyframes wave{
+
+    100%{
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+
+.fixButtonGroup{
+    position: fixed;
+    bottom  : 50px;
+    right   : 50px;
+}

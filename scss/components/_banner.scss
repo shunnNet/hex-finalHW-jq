@@ -1,0 +1,37 @@
+.banner {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    color : $base;
+    background-color: $black-700;
+    &__img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__title{
+        
+        position: absolute;
+        width: 100%;
+        font-size : $h1-font-size;
+        padding : $padding-md;
+        background-color: rgba(0,0,0,0.3);
+        top : 50%;
+        transform:translateY(-50%); 
+        z-index: 2;
+    }
+}
+
+
+.footer-banner{
+    background: linear-gradient(0deg, $green-600 0%, 
+                                            $green-800 100%);
+    color : $base;
+    &-title{
+        font-size: $h4-font-size;
+        text-align: center;
+        font-weight: $font-weight-bolder;
+        padding-bottom: $padding-lg;
+    }
+}

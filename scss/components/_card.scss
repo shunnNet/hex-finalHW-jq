@@ -1,0 +1,35 @@
+.card{
+    padding : $padding-md;
+    border-radius: $global-border-radius;
+    box-shadow: 0 3px 1.5px rgba(0,0,0,0.16);
+    
+    &__imgBox{
+        display : block;
+        height : 150px;
+        width  : 100%;
+        text-align: center;
+        margin-bottom: $margin-sm;
+        user-select: none;
+        &__img{
+            max-width: 100%;
+            height : 100%;
+        }
+    }
+    &__title{
+        font-size: 1.3em;
+        text-align: center;
+        margin-bottom: $margin-sm;
+    }
+    &__desc{
+        font-weight: $font-weight-base;
+    }
+}
+
+.card--fancyBox{
+    display: none;
+    font-size: $font-size-lg;
+    min-width: 300px;
+    max-width : 400px;
+    box-shadow: none;
+
+}

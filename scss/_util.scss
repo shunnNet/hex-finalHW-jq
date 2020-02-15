@@ -102,10 +102,17 @@
     padding: 0;
 }
 
-.pd-horizon-0-phone {
+.pd-h-0-phone {
     @include phone{
         padding-left: 0;
         padding-right:0;
+    }
+}
+
+.pd-v-0-phone {
+    @include phone{
+        padding-top: 0;
+        padding-bottom:0;
     }
 }
 .pd-0-pad {
@@ -187,6 +194,12 @@
 
 .float-l {
 	float: left;
+}
+
+.float-l-phone {
+    @include phone{
+        float: left;
+    }
 }
 
 .fw-base {
@@ -329,11 +342,23 @@
     }
 }
 
+.d-flex--phone{
+    display : none;
+    @include phone {
+        display : flex;
+    }
+}
+
 .d-flex--pad{
     display : none;
     @include pad {
         display : flex;
     }
+}
+.d-none-phone {
+	@include phone {
+		display: none;
+	}
 }
 
 .d-none-pad {

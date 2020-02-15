@@ -42,6 +42,14 @@ $(document).ready(function () {
          },500)
      })
 
+     $("#jq_slide_down").click( event =>{
+        $("#jq_slideDown_menu").slideToggle(300)
+                               .toggleClass("navMenu--mobile--active")
+     })
+     $(".jq_slide_down").click( event =>{
+        $(event.currentTarget).find('ul').slideToggle(300)
+     })
+
      var mySwiper = new Swiper ('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',

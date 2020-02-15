@@ -16,4 +16,9 @@
         font-size: $h4-font-size; 
         padding : 20px 0;
     }
+    @include phone{
+        td,th{
+            padding : 0 5px;
+        }
+    }
 }

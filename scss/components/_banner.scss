@@ -4,14 +4,11 @@
     position: relative;
     color : $base;
     background-color: $black-700;
-    &__img{
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
-
+    background-position: center;
+    background-size: cover;
+    background-size: no-repeat;
+    
     &__title{
-        
         position: absolute;
         width: 100%;
         font-size : $h1-font-size;
@@ -20,6 +17,9 @@
         top : 50%;
         transform:translateY(-50%); 
         z-index: 2;
+    }
+    @include phone{
+        font-size: $font-size-sm;
     }
 }
 

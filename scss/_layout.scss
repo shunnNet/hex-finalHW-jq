@@ -51,9 +51,15 @@ footer {
 
 .pure-g{
     padding : $gutter-v $side-gutter;
+    @include phone{
+        padding : $gutter-v $padding-md;
+    }
 }
 .pure-g [class *= "pure-u"]{
     padding : 0 $gutter;
+    @include phone{
+        padding : $gutter 0;
+    }
 }
 
 

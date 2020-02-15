@@ -2,7 +2,7 @@
     padding : $padding-md;
     border-radius: $global-border-radius;
     box-shadow: 0 3px 1.5px rgba(0,0,0,0.16);
-    
+    height : 100%;
     &__imgBox{
         display : block;
         height : 150px;
@@ -31,5 +31,10 @@
     min-width: 300px;
     max-width : 400px;
     box-shadow: none;
+    @include phone{
+        min-width: auto;
+        max-width : 100%;
+        font-size: $font-size-md;
+    }
 
 }

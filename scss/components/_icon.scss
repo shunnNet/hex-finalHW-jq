@@ -1,4 +1,3 @@
-
 .socialBox {
     display : inline-block;
     line-height: 1;
@@ -38,8 +37,7 @@
         font-size: 2em;
     }
     &:hover{
-        background-color: $primary;
-        color           : $base;
+        
         .fas {
             font-size: 2.5em;
         }
@@ -80,4 +78,18 @@
     position: fixed;
     bottom  : 50px;
     right   : 50px;
+    @include phone{
+        bottom: 25px;
+        right : 25px;
+    }
+}
+
+.navIconBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $h4-font-size;
+    width : 1em;
+    height: 1em;
+    cursor: pointer;
 }

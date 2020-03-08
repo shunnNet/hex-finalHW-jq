@@ -61,7 +61,7 @@ $(document).ready(function () {
     }
     function bindEventToggleMenuItem() {
         $(".jq_slide_down").click(event => {
-            $(event.currentTarget).find('ul').slideToggle(300)
+            $(event.currentTarget).siblings('ul').slideToggle(300)
         })
     }
     function activeSwiper(){

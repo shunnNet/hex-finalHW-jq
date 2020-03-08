@@ -31,13 +31,13 @@
     
     background-color: $body-bg;
     cursor: pointer;
+    @extend %no-pointer-touch-device;
     transition : .2s;
 
     .fas {
         font-size: 2em;
     }
     &:hover{
-        
         .fas {
             font-size: 2.5em;
         }
@@ -57,11 +57,21 @@
             animation-duration: 1.5s;
         }
         &::before{
-            
             animation-delay: 0s;
         }
         &::after{
             animation-delay: .5s;
+        }
+    }
+    @include touch-device {
+        &:hover{
+            .fas {
+                font-size: 2em;
+            }
+            &::before,&::after{
+                display : none;
+                animation-name : none;
+            }
         }
     }
 }

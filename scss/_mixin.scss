@@ -24,7 +24,19 @@
 	}
 }
 
+@mixin touch-device{
+    @media (pointer: "coarse"){
+        @content;
+    }
+}
 
+
+%no-pointer-touch-device{
+    @include touch-device{
+        cursor: none; // for Android not show blue background
+        -webkit-tap-highlight-color : transparent; // for iOS not show gray background when touch
+    }
+}
 @mixin ul--liInline {
 	& > li {
 		display: inline-block;
